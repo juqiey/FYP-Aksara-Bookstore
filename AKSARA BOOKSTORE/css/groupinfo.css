@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,47wQbNPTDJp9hMYdvogK2hAUiHsGeiybwaWe36bwtRQ3UTpYV7YuZ8FV5j9nauFCWwcjM6dTzpL5s2N79Rp5unwdMvc8ZKU=swap');
+
+:root{
+	/*font style*/
+	--title-font: 'Bebas Neue', cursive;
+	--content-font: 'Poppins', sans-serif;
+	
+	/*color theme*/
+	--font-color: #F5F5F1;
+	--background-color: #221F1F;
+	--first-color: #E50914;
+	--second-color: #B81D24;	
+}
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: var(--background-color);
+	font-family: var(--content-font);
+}
+
+header{
+	font-family: var(--content-font);
+	font-size: 1.1em;
+	background-color: var(--background-color);
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+
+.header-nav, .header-nav-overflow{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.header-nav ul li, .header-nav-overflow ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 1.2em;
+}
+.header-nav ul li a{
+	color: var(--font-color);
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.header-nav ul li a:hover{
+	color: var(--first-color);
+	transition: .4s;
+}
+
+.header-nav-overflow{
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.nav-logo{
+	width: 75px;
+}
+
+.nav-icon{
+	color: var(--first-color);
+	font-size: 1.75em;
+}
+
+.nav-icon:hover{
+	color: var(--font-color);
+	transition: .4s;
+}
+
+footer{
+	color: white;
+	font-family: var(--content-font);
+	font-size: 1.1em;
+	background-color: transparent;
+}
+
+.footer-container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
+	padding-bottom: 35px;
+	padding-left: 8%;
+	padding-right: 10%;
+}
+
+.footer-company-info{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.footer-company-logo{
+	text-align: center;
+}
+
+.footer-logo{
+	width: 150px;
+}
+
+.footer-company-name{
+	padding-bottom: 20px;
+}
+
+a{
+	color: var(--font-color);
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.footer-social-title{
+	font-size: 1.3em;
+}
+
+.footer-social-content{
+	width: 115%;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+.footer-social-icon{
+	font-size: 1.5em;
+}
+
+.footer-social-icon:hover{
+	color: var(--first-color);
+	transition: .4s;
+}
+
+.footer-group-info{
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.footer-group-info-link:hover{
+	color: var(--first-color);
+	transition: .4s;
+}
+
+.navigation-menu{
+	font-family: var(--content-font);
+	font-size: 0.7em;
+	display: none;
+	justify-content: space-evenly;
+	background-color: var(--second-color);
+	position: sticky;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.footer-nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+
+.footer-nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 2.2em;
+}
+.footer-nav ul li a{
+	color: var(--font-color);
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer-nav ul li a:hover{
+	color: var(--background-color);
+	transition: .4s;
+}
+
+.footer-nav-icon{
+	font-size: 2.3em;
+}
+
+
+
+/*START CODING HERE*/
+
+/*Ni pun boleh tukar*/
+
+.container 
+{
+	padding: 10px;
+	padding-top: 40px;
+}
+
+table{
+	width: 100%;
+	background-color: var(--second-color);
+	border-radius: 0.5em;
+}
+
+tr{
+	color: var(--font-color);
+	border-bottom: 3px solid var(--background-color);
+	border-top: 3px solid var(--background-color);
+	
+}
+
+td{
+	padding: 2em;
+}
+      
+.column66
+{
+	float: right;
+	width: 40%;
+}
+.column33
+{
+	float: left;
+	width: 60%;
+}
+
+img{
+	border-radius: 0.5em;
+}
+
+
+
+/*END CODING HERE*/
+
+@media screen and (max-width: 810px) {
+	.navigation-menu{
+		display: flex;
+		opacity: 100;
+		visibility: visible;
+	}
+	.nav-main{
+		opacity: 0;
+		visibility: hidden;
+	}
+	.header-nav{
+		display: none;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.header-nav-overflow{
+		display: flex;
+		justify-content: space-between;
+		opacity: 100;
+		visibility: visible;
+	}
+	
+	
+}
+
+@media screen and (max-width: 560px) {
+    .footer-container{
+		display: inline-block;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.footer-social{
+		padding-top: 30px;
+	}
+	.footer-social-content{
+		width: 60%;
+		padding-top: 10px;
+	}
+}
